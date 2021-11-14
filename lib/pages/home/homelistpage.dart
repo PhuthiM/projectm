@@ -24,7 +24,7 @@ class HomeListPage extends StatelessWidget {
           CarouselSlider(
             options: CarouselOptions(
               autoPlay: true,
-              aspectRatio: 3.0,
+              aspectRatio: 6.0,
               enlargeCenterPage: true,
               enlargeStrategy: CenterPageEnlargeStrategy.height,
             ),
@@ -204,7 +204,7 @@ class HomeListPage extends StatelessWidget {
                                   width: 60.0,
                                 ),
                                 Padding(
-                                  padding: const EdgeInsets.only(left: 18.0),
+                                  padding: const EdgeInsets.only(left: 12.0),
                                   child: Column(
                                     mainAxisAlignment: MainAxisAlignment.start,
                                     crossAxisAlignment:
@@ -212,11 +212,11 @@ class HomeListPage extends StatelessWidget {
                                     children: [
                                       Text(
                                         'เดือนหนาว',
-                                        style: GoogleFonts.itim(fontSize: 15.0),
+                                        style: GoogleFonts.itim(fontSize: 13.0),
                                       ),
                                       Text(
                                         'เดือนหนาวครั้งที่่ 1',
-                                        style: GoogleFonts.itim(fontSize: 13.0),
+                                        style: GoogleFonts.itim(fontSize: 12.0),
                                       ),
                                     ],
                                   ),
@@ -258,7 +258,7 @@ class HomeListPage extends StatelessWidget {
                                   children: [
                                     Text(
                                       'นิยายรักวัยรุ่น',
-                                      style: GoogleFonts.itim(fontSize: 15.0),
+                                      style: GoogleFonts.itim(fontSize: 13.0),
                                     ),
                                   ],
                                 ),
@@ -375,7 +375,7 @@ class HomeListPage extends StatelessWidget {
                                   children: [
                                     Text(
                                       'การ์ตูน',
-                                      style: GoogleFonts.itim(fontSize: 20.0),
+                                      style: GoogleFonts.itim(fontSize: 15.0),
                                     ),
                                   ],
                                 ),
@@ -393,7 +393,7 @@ class HomeListPage extends StatelessWidget {
                                   children: [
                                     Text(
                                       'ไดอารี่',
-                                      style: GoogleFonts.itim(fontSize: 20.0),
+                                      style: GoogleFonts.itim(fontSize: 15.0),
                                     ),
                                   ],
                                 ),
