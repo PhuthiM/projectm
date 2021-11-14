@@ -24,7 +24,7 @@ class HomeListPage extends StatelessWidget {
           CarouselSlider(
             options: CarouselOptions(
               autoPlay: true,
-              aspectRatio: 6.0,
+              aspectRatio: 80,
               enlargeCenterPage: true,
               enlargeStrategy: CenterPageEnlargeStrategy.height,
             ),
