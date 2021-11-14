@@ -20,15 +20,12 @@ class _BookThreeState extends State<BookTwo> {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: const [
-
               Text('.'),
               Text('.'),
-              Text(
-                  '"ที่นี่มันสำหรับบุคลที่สมควรได้รับการยอมรับ"'),
+              Text('"ที่นี่มันสำหรับบุคลที่สมควรได้รับการยอมรับ"'),
               Text('แต่ว่ายกเว้น "มึง" นะ'),
               Text('.'),
               Text('.'),
-
             ],
           ),
         ),
