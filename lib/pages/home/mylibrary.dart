@@ -154,34 +154,31 @@ class MyLibrary extends StatelessWidget {
                             builder: (context) => const BookFour()),
                       );
                     },
-                    child: Expanded(
-                      child: SizedBox(
-                        child: Row(
-                          children: [
-                            Image.asset(
-                              'assets/images/Winter04.jpg',
-                              height: 60.0,
-                              width: 100.0,
+                    child: SizedBox(
+                      child: Row(
+                        children: [
+                          Image.asset(
+                            'assets/images/Winter04.jpg',
+
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(left: 18.0),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  'เดือนหนาว',
+                                  style: GoogleFonts.itim(fontSize: 20.0),
+                                ),
+                                Text(
+                                  'ปลายฝนต้นหนาว',
+                                  style: GoogleFonts.itim(fontSize: 15.0),
+                                ),
+                              ],
                             ),
-                            Padding(
-                              padding: const EdgeInsets.only(left: 18.0),
-                              child: Column(
-                                mainAxisAlignment: MainAxisAlignment.start,
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text(
-                                    'เดือนหนาว',
-                                    style: GoogleFonts.itim(fontSize: 20.0),
-                                  ),
-                                  Text(
-                                    'ปลายฝนต้นหนาว',
-                                    style: GoogleFonts.itim(fontSize: 15.0),
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ],
-                        ),
+                          ),
+                        ],
                       ),
                     ),
                   ),
