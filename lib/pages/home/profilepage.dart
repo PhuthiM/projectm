@@ -37,7 +37,7 @@ class ProfilePage extends StatelessWidget {
             ),
             const SizedBox(height: 10.0),
             Text(
-              'MRS.jaidee Meenumjai',
+              'Jaidee Meenumjai',
               style: GoogleFonts.itim(fontSize: 35.0),
             ),
              Text(

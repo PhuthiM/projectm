@@ -19,7 +19,7 @@ class _WriTingState extends State<WriTing> {
         Padding(
           padding: const EdgeInsets.all(32.0),
           child: Text(
-            'Notification',
+            'Writing',
             style: GoogleFonts.itim(fontSize: 25.0),
           ),
         ),

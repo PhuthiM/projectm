@@ -18,13 +18,13 @@ final List<String> imgList = [
 class HomeListPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Column(
+    return SafeArea(
+      child: Column(
         children: [
           CarouselSlider(
             options: CarouselOptions(
               autoPlay: true,
-              aspectRatio: 3.0,
+              aspectRatio: 8.0,
               enlargeCenterPage: true,
               enlargeStrategy: CenterPageEnlargeStrategy.height,
             ),
@@ -33,7 +33,7 @@ class HomeListPage extends StatelessWidget {
           Padding(
             padding: EdgeInsets.only(top: 18.0, left: 32.0),
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 const Padding(
@@ -45,49 +45,51 @@ class HomeListPage extends StatelessWidget {
                 ),
                 Row(
                   children: [
-                    Card(
-                      child: InkWell(
-                        splashColor: Colors.blue.withAlpha(30),
-                        onTap: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => const BookOne()),
-                          );
-                        },
-                        child: SizedBox(
-                          width: 250,
-                          height: 70,
-                          child: Row(
-                            children: [
-                              Image.asset(
-                                'assets/images/books-1.jpg',
-                                height: 55.0,
-                              ),
-                              Padding(
-                                padding: const EdgeInsets.all(8.0),
-                                child: Column(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  crossAxisAlignment: CrossAxisAlignment.center,
-                                  children: [
-                                    Text(
-                                      'Criminal City',
-                                      style: GoogleFonts.itim(fontSize: 20.0),
-                                    ),
-                                    Text(
-                                      '0 criminal city',
-                                      style: GoogleFonts.itim(fontSize: 15.0),
-                                    ),
-                                  ],
+                    Expanded(
+                      child: Card(
+                        child: InkWell(
+                          splashColor: Colors.blue.withAlpha(30),
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => const BookOne()),
+                            );
+                          },
+                          child: SizedBox(
+                            width: 250,
+                            height: 70,
+                            child: Row(
+                              children: [
+                                Image.asset(
+                                  'assets/images/books-1.jpg',
+                                  height: 55.0,
                                 ),
-                              ),
-                            ],
+                                Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Column(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.center,
+                                    children: [
+                                      Text(
+                                        'Criminal City',
+                                        style: GoogleFonts.itim(fontSize: 20.0),
+                                      ),
+                                      Text(
+                                        '0 criminal city',
+                                        style: GoogleFonts.itim(fontSize: 15.0),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ],
+                            ),
                           ),
                         ),
                       ),
                     ),
-                    Padding(
-                      padding: const EdgeInsets.only(left: 18.0),
+                    Expanded(
                       child: Card(
                         child: InkWell(
                           splashColor: Colors.blue.withAlpha(30),
@@ -112,7 +114,7 @@ class HomeListPage extends StatelessWidget {
                                   child: Column(
                                     mainAxisAlignment: MainAxisAlignment.center,
                                     crossAxisAlignment:
-                                    CrossAxisAlignment.center,
+                                        CrossAxisAlignment.center,
                                     children: [
                                       Text(
                                         'Highway to H ?',
@@ -131,53 +133,58 @@ class HomeListPage extends StatelessWidget {
                         ),
                       ),
                     ),
+                    const Padding(
+                      padding: EdgeInsets.all(8.0),
+                    )
                   ],
                 ),
                 Row(
                   children: [
-                    Card(
-                      child: InkWell(
-                        splashColor: Colors.blue.withAlpha(30),
-                        onTap: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => const BookThree()),
-                          );
-                        },
-                        child: SizedBox(
-                          width: 250,
-                          height: 70,
-                          child: Row(
-                            children: [
-                              Image.asset(
-                                'assets/images/sky3.jpg',
-                                height: 100.0,
-                                width: 100.0,
-                              ),
-                              Center(
-                                child: Column(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  crossAxisAlignment: CrossAxisAlignment.center,
-                                  children: [
-                                    Text(
-                                      'ฤดูกาล',
-                                      style: GoogleFonts.itim(fontSize: 20.0),
-                                    ),
-                                    Text(
-                                      'ปฐมกาล',
-                                      style: GoogleFonts.itim(fontSize: 15.0),
-                                    ),
-                                  ],
+                    Expanded(
+                      child: Card(
+                        child: InkWell(
+                          splashColor: Colors.blue.withAlpha(30),
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => const BookThree()),
+                            );
+                          },
+                          child: SizedBox(
+                            width: 250,
+                            height: 70,
+                            child: Row(
+                              children: [
+                                Image.asset(
+                                  'assets/images/sky3.jpg',
+                                  height: 100.0,
+                                  width: 100.0,
                                 ),
-                              ),
-                            ],
+                                Center(
+                                  child: Column(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.center,
+                                    children: [
+                                      Text(
+                                        'ฤดูกาล',
+                                        style: GoogleFonts.itim(fontSize: 20.0),
+                                      ),
+                                      Text(
+                                        'ปฐมกาล',
+                                        style: GoogleFonts.itim(fontSize: 15.0),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ],
+                            ),
                           ),
                         ),
                       ),
                     ),
-                    Padding(
-                      padding: const EdgeInsets.only(left: 18.0),
+                    Expanded(
                       child: Card(
                         child: InkWell(
                           splashColor: Colors.blue.withAlpha(30),
@@ -203,7 +210,7 @@ class HomeListPage extends StatelessWidget {
                                   child: Column(
                                     mainAxisAlignment: MainAxisAlignment.center,
                                     crossAxisAlignment:
-                                    CrossAxisAlignment.center,
+                                        CrossAxisAlignment.center,
                                     children: [
                                       Text(
                                         'เดือนหนาว',
@@ -222,6 +229,9 @@ class HomeListPage extends StatelessWidget {
                         ),
                       ),
                     ),
+                    const Padding(
+                      padding: EdgeInsets.all(8.0),
+                    )
                   ],
                 ),
                 Padding(
@@ -239,74 +249,160 @@ class HomeListPage extends StatelessWidget {
                       ),
                       Row(
                         children: [
-                          Card(
-                            child: SizedBox(
-                              width: 250,
-                              height: 70,
-                              child: Column(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                children: [
-                                  Text(
-                                    'นิยายรักวัยรุ่น',
-                                    style: GoogleFonts.itim(fontSize: 20.0),
-                                  ),
-                                ],
+                          Expanded(
+                            child: Card(
+                              child: SizedBox(
+                                width: 250,
+                                height: 70,
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: [
+                                    Text(
+                                      'นิยายรักวัยรุ่น',
+                                      style: GoogleFonts.itim(fontSize: 20.0),
+                                    ),
+                                  ],
+                                ),
                               ),
                             ),
                           ),
-                          Card(
-                            child: SizedBox(
-                              width: 250,
-                              height: 70,
-                              child: Column(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                children: [
-                                  Text(
-                                    'วรรณกรรม',
-                                    style: GoogleFonts.itim(fontSize: 20.0),
-                                  ),
-                                ],
+                          Expanded(
+                            child: Card(
+                              child: SizedBox(
+                                width: 250,
+                                height: 70,
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: [
+                                    Text(
+                                      'วรรณกรรม',
+                                      style: GoogleFonts.itim(fontSize: 20.0),
+                                    ),
+                                  ],
+                                ),
                               ),
                             ),
                           ),
+                          Expanded(
+                            child: Card(
+                              child: SizedBox(
+                                width: 250,
+                                height: 70,
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: [
+                                    Text(
+                                      'โรแมนติก',
+                                      style: GoogleFonts.itim(fontSize: 20.0),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                          ),
+                          Expanded(
+                            child: Card(
+                              child: SizedBox(
+                                width: 250,
+                                height: 70,
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: [
+                                    Text(
+                                      'เรื่องเล่า',
+                                      style: GoogleFonts.itim(fontSize: 20.0),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                          ),
+                          const Padding(
+                            padding: EdgeInsets.all(8.0),
+                          )
                         ],
                       ),
                       Row(
                         children: [
-                          Card(
-                            child: SizedBox(
-                              width: 250,
-                              height: 70,
-                              child: Column(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                children: [
-                                  Text(
-                                    'แฟนตาซี',
-                                    style: GoogleFonts.itim(fontSize: 20.0),
-                                  ),
-                                ],
+                          Expanded(
+                            child: Card(
+                              child: SizedBox(
+                                width: 250,
+                                height: 70,
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: [
+                                    Text(
+                                      'แฟนตาซี',
+                                      style: GoogleFonts.itim(fontSize: 20.0),
+                                    ),
+                                  ],
+                                ),
                               ),
                             ),
                           ),
-                          Card(
-                            child: SizedBox(
-                              width: 250,
-                              height: 70,
-                              child: Column(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                children: [
-                                  Text(
-                                    'นิยายสอบสวน',
-                                    style: GoogleFonts.itim(fontSize: 20.0),
-                                  ),
-                                ],
+                          Expanded(
+                            child: Card(
+                              child: SizedBox(
+                                width: 250,
+                                height: 70,
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: [
+                                    Text(
+                                      'นิยายสอบสวน',
+                                      style: GoogleFonts.itim(fontSize: 20.0),
+                                    ),
+                                  ],
+                                ),
                               ),
                             ),
                           ),
+                          Expanded(
+                            child: Card(
+                              child: SizedBox(
+                                width: 250,
+                                height: 70,
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: [
+                                    Text(
+                                      'การ์ตูน',
+                                      style: GoogleFonts.itim(fontSize: 20.0),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                          ),
+                          Expanded(
+                            child: Card(
+                              child: SizedBox(
+                                width: 250,
+                                height: 70,
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: [
+                                    Text(
+                                      'ไดอารี่',
+                                      style: GoogleFonts.itim(fontSize: 20.0),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                          ),
+                          const Padding(
+                            padding: EdgeInsets.all(8.0),
+                          )
                         ],
                       ),
                     ],
@@ -322,53 +418,53 @@ class HomeListPage extends StatelessWidget {
 }
 
 final List<Widget> imageSliders = imgList
-    .map((item) =>
-    Container(
-      margin: const EdgeInsets.all(5.0),
-      child: ClipRRect(
-          borderRadius: const BorderRadius.all(Radius.circular(5.0)),
-          child: Stack(
-            children: <Widget>[
-              Image.network(item, fit: BoxFit.cover, width: 1000.0),
-              Positioned(
-                bottom: 0.0,
-                left: 0.0,
-                right: 0.0,
-                child: Container(
-                  decoration: const BoxDecoration(
-                    gradient: LinearGradient(
-                      colors: [
-                        Color.fromARGB(200, 0, 0, 0),
-                        Color.fromARGB(0, 0, 0, 0)
-                      ],
-                      begin: Alignment.bottomCenter,
-                      end: Alignment.topCenter,
+    .map((item) => Container(
+          margin: const EdgeInsets.all(5.0),
+          child: ClipRRect(
+              borderRadius: const BorderRadius.all(Radius.circular(5.0)),
+              child: Stack(
+                children: <Widget>[
+                  Image.network(item, fit: BoxFit.cover, width: 1000.0),
+                  Positioned(
+                    bottom: 0.0,
+                    left: 0.0,
+                    right: 0.0,
+                    child: Container(
+                      decoration: const BoxDecoration(
+                        gradient: LinearGradient(
+                          colors: [
+                            Color.fromARGB(200, 0, 0, 0),
+                            Color.fromARGB(0, 0, 0, 0)
+                          ],
+                          begin: Alignment.bottomCenter,
+                          end: Alignment.topCenter,
+                        ),
+                      ),
+                      padding: const EdgeInsets.symmetric(
+                          vertical: 10.0, horizontal: 20.0),
+                      child: Text(
+                        imgList.indexOf(item) == 0
+                            ? 'โรแมนติก'
+                            : imgList.indexOf(item) == 1
+                                ? 'นิยายวัยรุ่น'
+                                : imgList.indexOf(item) == 2
+                                    ? 'แฟนตาซี'
+                                    : imgList.indexOf(item) == 3
+                                        ? 'นิยายสอบสวน'
+                                        : imgList.indexOf(item) == 4
+                                            ? 'ป่าเวทมนตร์'
+                                            : imgList.indexOf(item) == 5
+                                                ? 'วรรณกรรม'
+                                                : '',
+                        style: const TextStyle(
+                          color: Colors.white,
+                          fontSize: 20.0,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
                     ),
                   ),
-                  padding: const EdgeInsets.symmetric(
-                      vertical: 10.0, horizontal: 20.0),
-                  child: Text(
-                    imgList.indexOf(item) == 0 ?
-                    'โรแมนติก'
-                        : imgList.indexOf(item) == 1 ?
-                    'นิยายวัยรุ่น'
-                        : imgList.indexOf(item) == 2 ?
-                    'แฟนตาซี'
-                        : imgList.indexOf(item) == 3 ?
-                    'นิยายสอบสวน'
-                        : imgList.indexOf(item) == 4 ?
-                    'ป่าเวทมนตร์'
-                        : imgList.indexOf(item) == 5 ?
-                    'วรรณกรรม':'',
-                    style: const TextStyle(
-                      color: Colors.white,
-                      fontSize: 20.0,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                ),
-              ),
-            ],
-          )),
-    ))
+                ],
+              )),
+        ))
     .toList();

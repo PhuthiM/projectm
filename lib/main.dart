@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:projectm/pages/home/beginpage.dart';
 import 'package:projectm/pages/home/profilepage.dart';
-import 'package:projectm/pages/login/login_page.dart';
 
 import 'pages/home/topcolumn.dart';
 

@@ -42,8 +42,6 @@ class _NotifiCationState extends State<NotifiCation> {
                       );
                     },
                     child: SizedBox(
-                      width: 550,
-                      height: 70,
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
@@ -100,8 +98,6 @@ class _NotifiCationState extends State<NotifiCation> {
                       );
                     },
                     child: SizedBox(
-                      width: 550,
-                      height: 70,
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
@@ -157,8 +153,6 @@ class _NotifiCationState extends State<NotifiCation> {
                       );
                     },
                     child: SizedBox(
-                      width: 550,
-                      height: 70,
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
@@ -166,7 +160,7 @@ class _NotifiCationState extends State<NotifiCation> {
                             children: [
                               Image.asset(
                                 'assets/images/sky3.jpg',
-                                height: 100.0,
+                                height: 60.0,
                                 width: 100.0,
                               ),
                               Padding(
@@ -215,8 +209,6 @@ class _NotifiCationState extends State<NotifiCation> {
                       );
                     },
                     child: SizedBox(
-                      width: 550,
-                      height: 70,
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
