@@ -20,7 +20,7 @@ class _BookThreeState extends State<BookTwo> {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: const [
-              Text('.'),
+
               Text('.'),
               Text('.'),
               Text(
@@ -28,7 +28,7 @@ class _BookThreeState extends State<BookTwo> {
               Text('แต่ว่ายกเว้น "มึง" นะ'),
               Text('.'),
               Text('.'),
-              Text('.'),
+
             ],
           ),
         ),
