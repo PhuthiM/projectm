@@ -11,7 +11,8 @@ class _BookThreeState extends State<BookThree> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
+
+      appBar: AppBar(backgroundColor: Colors.teal,
         title: Text('ปฐมกาล'),
       ),
       body: Container(

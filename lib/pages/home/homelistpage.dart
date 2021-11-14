@@ -24,14 +24,14 @@ class HomeListPage extends StatelessWidget {
           CarouselSlider(
             options: CarouselOptions(
               autoPlay: true,
-              aspectRatio: 8.0,
+              aspectRatio: 3.0,
               enlargeCenterPage: true,
               enlargeStrategy: CenterPageEnlargeStrategy.height,
             ),
             items: imageSliders,
           ),
           Padding(
-            padding: EdgeInsets.only(top: 18.0, left: 32.0),
+            padding: EdgeInsets.only(top: 18.0, left: 20.0),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -57,13 +57,12 @@ class HomeListPage extends StatelessWidget {
                             );
                           },
                           child: SizedBox(
-                            width: 250,
-                            height: 70,
+
                             child: Row(
                               children: [
                                 Image.asset(
                                   'assets/images/books-1.jpg',
-                                  height: 55.0,
+                                  height: 50.0,
                                 ),
                                 Padding(
                                   padding: const EdgeInsets.all(8.0),
@@ -74,11 +73,11 @@ class HomeListPage extends StatelessWidget {
                                     children: [
                                       Text(
                                         'Criminal City',
-                                        style: GoogleFonts.itim(fontSize: 20.0),
+                                        style: GoogleFonts.itim(fontSize: 13.0),
                                       ),
                                       Text(
                                         '0 criminal city',
-                                        style: GoogleFonts.itim(fontSize: 15.0),
+                                        style: GoogleFonts.itim(fontSize: 10.0),
                                       ),
                                     ],
                                   ),
@@ -101,14 +100,12 @@ class HomeListPage extends StatelessWidget {
                             );
                           },
                           child: SizedBox(
-                            width: 250,
-                            height: 70,
                             child: Row(
                               children: [
                                 Image.asset(
                                   'assets/images/anime_girl.png',
-                                  height: 60.0,
-                                  width: 100.0,
+                                  height: 50.0,
+                                  width: 50.0,
                                 ),
                                 Center(
                                   child: Column(
@@ -118,11 +115,11 @@ class HomeListPage extends StatelessWidget {
                                     children: [
                                       Text(
                                         'Highway to H ?',
-                                        style: GoogleFonts.itim(fontSize: 20.0),
+                                        style: GoogleFonts.itim(fontSize: 15.0),
                                       ),
                                       Text(
                                         '1 Intro',
-                                        style: GoogleFonts.itim(fontSize: 15.0),
+                                        style: GoogleFonts.itim(fontSize: 13.0),
                                       ),
                                     ],
                                   ),
@@ -152,14 +149,16 @@ class HomeListPage extends StatelessWidget {
                             );
                           },
                           child: SizedBox(
-                            width: 250,
-                            height: 70,
+
                             child: Row(
                               children: [
-                                Image.asset(
-                                  'assets/images/sky3.jpg',
-                                  height: 100.0,
-                                  width: 100.0,
+                                Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Image.asset(
+                                    'assets/images/sky3.jpg',
+                                    height: 40.0,
+                                    width: 50.0,
+                                  ),
                                 ),
                                 Center(
                                   child: Column(
@@ -169,7 +168,7 @@ class HomeListPage extends StatelessWidget {
                                     children: [
                                       Text(
                                         'ฤดูกาล',
-                                        style: GoogleFonts.itim(fontSize: 20.0),
+                                        style: GoogleFonts.itim(fontSize: 18.0),
                                       ),
                                       Text(
                                         'ปฐมกาล',
@@ -196,29 +195,28 @@ class HomeListPage extends StatelessWidget {
                             );
                           },
                           child: SizedBox(
-                            width: 250,
-                            height: 70,
+
                             child: Row(
                               children: [
                                 Image.asset(
                                   'assets/images/Winter04.jpg',
                                   height: 60.0,
-                                  width: 90.0,
+                                  width: 60.0,
                                 ),
                                 Padding(
                                   padding: const EdgeInsets.only(left: 18.0),
                                   child: Column(
-                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    mainAxisAlignment: MainAxisAlignment.start,
                                     crossAxisAlignment:
-                                        CrossAxisAlignment.center,
+                                        CrossAxisAlignment.start,
                                     children: [
                                       Text(
                                         'เดือนหนาว',
-                                        style: GoogleFonts.itim(fontSize: 20.0),
+                                        style: GoogleFonts.itim(fontSize: 15.0),
                                       ),
                                       Text(
                                         'เดือนหนาวครั้งที่่ 1',
-                                        style: GoogleFonts.itim(fontSize: 15.0),
+                                        style: GoogleFonts.itim(fontSize: 13.0),
                                       ),
                                     ],
                                   ),
@@ -260,7 +258,7 @@ class HomeListPage extends StatelessWidget {
                                   children: [
                                     Text(
                                       'นิยายรักวัยรุ่น',
-                                      style: GoogleFonts.itim(fontSize: 20.0),
+                                      style: GoogleFonts.itim(fontSize: 15.0),
                                     ),
                                   ],
                                 ),
@@ -278,7 +276,7 @@ class HomeListPage extends StatelessWidget {
                                   children: [
                                     Text(
                                       'วรรณกรรม',
-                                      style: GoogleFonts.itim(fontSize: 20.0),
+                                      style: GoogleFonts.itim(fontSize: 15.0),
                                     ),
                                   ],
                                 ),
@@ -296,7 +294,7 @@ class HomeListPage extends StatelessWidget {
                                   children: [
                                     Text(
                                       'โรแมนติก',
-                                      style: GoogleFonts.itim(fontSize: 20.0),
+                                      style: GoogleFonts.itim(fontSize: 15.0),
                                     ),
                                   ],
                                 ),
@@ -314,7 +312,7 @@ class HomeListPage extends StatelessWidget {
                                   children: [
                                     Text(
                                       'เรื่องเล่า',
-                                      style: GoogleFonts.itim(fontSize: 20.0),
+                                      style: GoogleFonts.itim(fontSize: 15.0),
                                     ),
                                   ],
                                 ),
@@ -339,7 +337,7 @@ class HomeListPage extends StatelessWidget {
                                   children: [
                                     Text(
                                       'แฟนตาซี',
-                                      style: GoogleFonts.itim(fontSize: 20.0),
+                                      style: GoogleFonts.itim(fontSize: 15.0),
                                     ),
                                   ],
                                 ),
@@ -355,9 +353,11 @@ class HomeListPage extends StatelessWidget {
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   crossAxisAlignment: CrossAxisAlignment.center,
                                   children: [
-                                    Text(
-                                      'นิยายสอบสวน',
-                                      style: GoogleFonts.itim(fontSize: 20.0),
+                                    Center(
+                                      child: Text(
+                                        '  นิยาย\nสอบสวน',
+                                        style: GoogleFonts.itim(fontSize: 15.0),
+                                      ),
                                     ),
                                   ],
                                 ),

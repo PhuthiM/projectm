@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'ReadReal',
+      title: 'MindMap',
       theme: ThemeData(
         primarySwatch: Colors.teal,
         textTheme: const TextTheme(
@@ -29,12 +29,7 @@ class MyApp extends StatelessWidget {
         ),
       ),
      home: const BeginPage(),
-     /* routes: {
-       LoginPage.routeName: (context) => const LoginPage(),
-        HomePage.routeName: (context) => const HomePage(),
-        ProfilePage.routeName:(context)=> const ProfilePage(),
-      },
-      initialRoute: HomePage.routeName,*/
+
 
     );
   }

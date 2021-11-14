@@ -198,62 +198,7 @@ class _NotifiCationState extends State<NotifiCation> {
                     ),
                   ),
                 ),
-                Card(
-                  child: InkWell(
-                    splashColor: Colors.blue.withAlpha(30),
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => const BookFour()),
-                      );
-                    },
-                    child: SizedBox(
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Row(
-                            children: [
-                              Image.asset(
-                                'assets/images/Winter04.jpg',
-                                height: 60.0,
-                                width: 100.0,
-                              ),
-                              Padding(
-                                padding: const EdgeInsets.only(left: 18.0),
-                                child: Column(
-                                  mainAxisAlignment: MainAxisAlignment.start,
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Text(
-                                      'เดือนหนาว',
-                                      style: GoogleFonts.itim(fontSize: 20.0),
-                                    ),
-                                    Text(
-                                      'เดือนหนาวครั้งที่ 1',
-                                      style: GoogleFonts.itim(fontSize: 15.0),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ],
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.only(right: 18.0),
-                            child: Container(
-                                child: const Text(
-                              'Up',
-                              style: TextStyle(
-                                  fontSize: 25.0,
-                                  color: Colors.red,
-                                  fontWeight: FontWeight.bold),
-                            )),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-                ),
+
               ],
             ),
           ],

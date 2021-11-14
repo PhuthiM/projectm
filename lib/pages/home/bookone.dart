@@ -11,7 +11,9 @@ class _BookThreeState extends State<BookOne> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+
       appBar: AppBar(
+        backgroundColor: Colors.teal,
         title: Text('0 criminal city'),
       ),
       body: Container(
@@ -23,8 +25,8 @@ class _BookThreeState extends State<BookOne> {
               Text('.'),
               Text('.'),
               Text('.'),
-              Text(
-                  '"ขอต้อนรับสู่โลกใบใหม่ที่ความเมตตาเป็นแค่เพียงนิทานหลอกเด็กวัยเยาว์"'),
+              Text('"ขอต้อนรับสู่โลกใบใหม่ที่ความเมตตา์"'),
+              Text('"เป็นแค่เพียงนิทานหลอกเด็กวัยเยาว์"'),
               Text('"Zombie Wolrd"'),
               Text('.'),
               Text('.'),
