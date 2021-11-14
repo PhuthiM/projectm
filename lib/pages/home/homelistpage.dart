@@ -1,10 +1,10 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:projectm/pages/secondhome/bookfour.dart';
-import 'package:projectm/pages/secondhome/bookone.dart';
-import 'package:projectm/pages/secondhome/bookthree.dart';
-import 'package:projectm/pages/secondhome/booktwo.dart';
+import 'package:projectm/pages/home/bookfour.dart';
+import 'package:projectm/pages/home/bookone.dart';
+import 'package:projectm/pages/home/bookthree.dart';
+import 'package:projectm/pages/home/booktwo.dart';
 
 final List<String> imgList = [
   'https://images.unsplash.com/photo-1520342868574-5fa3804e551c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6ff92caffcdd63681a35134a6770ed3b&auto=format&fit=crop&w=1951&q=80',

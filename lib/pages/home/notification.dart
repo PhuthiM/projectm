@@ -1,10 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:projectm/pages/secondhome/bookfour.dart';
-import 'package:projectm/pages/secondhome/bookone.dart';
-import 'package:projectm/pages/secondhome/bookthree.dart';
-import 'package:projectm/pages/secondhome/booktwo.dart';
+import 'package:projectm/pages/home/bookfour.dart';
+import 'package:projectm/pages/home/bookone.dart';
+import 'package:projectm/pages/home/bookthree.dart';
+import 'package:projectm/pages/home/booktwo.dart';
 
 class NotifiCation extends StatefulWidget {
   const NotifiCation({Key? key}) : super(key: key);
